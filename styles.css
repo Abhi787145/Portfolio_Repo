@@ -1,19 +1,93 @@
-/* styles.css */
-body {
-  font-family: 'Roboto', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f4f8;
-  color: #333;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
 .container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-header {
-  background: linear-gradient(to right, #1e88e5, #42a5f5);
-  color: #fff;
-  padding: 20px 0;
+
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
   text-align: center;
-  box-shadow: 0
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #009688;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #00bcd4;
+}
+
+section {
+  margin: 40px 0;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 40px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+#contactBtn {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#contactBtn:hover {
+  background-color: #00796b;
+}
+
+#contactInfo {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+a {
+  color: #009688;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
