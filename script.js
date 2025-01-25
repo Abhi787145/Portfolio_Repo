@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const projectCards = document.querySelectorAll('.project-card');
+    const experienceCards = document.querySelectorAll('.experience-card');
   
-    projectCards.forEach(card => {
+    experienceCards.forEach(card => {
       card.addEventListener('mouseenter', () => {
         card.style.transform = 'scale(1.05)';
       });
