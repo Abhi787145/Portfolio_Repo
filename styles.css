@@ -14,8 +14,9 @@ body {
   padding: 0;
   font-weight: 300;
   background-image: url('https://as2.ftcdn.net/v2/jpg/04/11/86/13/1000_F_411861379_ZR4zqf83dY1jZs8utD2hvI7lJC80IIzi.jpg'); /* Your image background */
-  background-size: cover;
+  background-size: cover; /* Ensures the image covers the full page */
   background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
 }
 
 .container {
@@ -97,24 +98,6 @@ ul {
 
 ul li {
   color: #666;
-}
-
-#contactBtn {
-  background-color: #00bcd4;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-#contactBtn:hover {
-  background-color: #008c84;
 }
 
 #contactInfo {
