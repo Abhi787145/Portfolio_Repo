@@ -2,16 +2,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #3498db, #1abc9c);
+  background: url('background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  transition: transform 0.5s ease;
 }
 
+/* Navigation Bar */
 header {
   position: fixed;
   top: 0;
@@ -39,40 +40,86 @@ header {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Sliding Transition Effects */
-body.slide-left {
-  transform: translateX(-100%);
+/* Profile Page Layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px; /* Space for navigation bar */
+  width: 90%;
 }
 
-body.slide-right {
-  transform: translateX(100%);
-}
-
-body.slide-up {
-  transform: translateY(-100%);
-}
-
-body.slide-down {
-  transform: translateY(100%);
-}
-
-/* Card Styling */
-.card {
-  background: rgba(255, 255, 255, 0.1);
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1abc9c;
+}
+
+.description p {
+  margin: 5px 0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Profile Picture Styling */
+.image-section {
+  flex: 0.5;
+  position: relative;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  opacity: 0.85;
+  animation: fade-in 2s ease-in-out;
 }
 
-.content {
-  margin-top: 60px; /* Space for the fixed navigation bar */
+.profile-pic:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* Keyframes for Fading */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
