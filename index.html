@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Profile</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <a href="profile.html" target="_blank">Profile</a>
-      <a href="expertise.html" target="_blank">Expertise</a>
-      <a href="projects.html" target="_blank">Projects</a>
-      <a href="skills.html" target="_blank">Skills & Certifications</a>
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-link" data-slide="left">Home</a>
+      <a href="profile.html" class="nav-link" data-slide="left">Profile</a>
+      <a href="expertise.html" class="nav-link" data-slide="left">Expertise</a>
+      <a href="projects.html" class="nav-link" data-slide="left">Projects</a>
+      <a href="skills.html" class="nav-link" data-slide="left">Skills</a>
     </nav>
+  </header>
+  <div class="content">
+    <div class="card">
+      <h1>Abhishek Sharma</h1>
+      <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile-pic">
+      <p><strong>DevOps Engineer</strong></p>
+      <p><strong>Contact:</strong> +91 8308989160 | as787145@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/as787145" target="_blank">View Profile</a></p>
+      <p><strong>Location:</strong> Nashik, Maharashtra</p>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
